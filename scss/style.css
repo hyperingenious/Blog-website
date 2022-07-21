@@ -7,18 +7,19 @@
   padding: 0;
 }
 
-body {
+header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  padding: 0px 25px;
 }
 
 nav {
   display: flex;
-  padding: 1% 5.5%;
   justify-content: space-between;
   align-items: center;
+  max-width: 1600px;
   height: 11vh;
+  width: 100%;
 }
 nav .logo {
   font-size: 30px;
@@ -49,22 +50,25 @@ nav ul li a .span {
   transition: 0.3s;
 }
 
-.container {
-  padding: 0% 5.5%;
+.first-page-section {
   display: flex;
-  padding-top: 11rem;
+  padding: 0px 25px;
+  justify-content: center;
+}
+.first-page-section .container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1600px;
   width: 100%;
-  height: 60vh;
 }
-.container .left-side {
+.first-page-section .container .left-side {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-.container .left-side .tag-line {
+.first-page-section .container .left-side .tag-line {
   font-size: 44px;
   letter-spacing: 1px;
   line-height: 54px;
@@ -73,16 +77,16 @@ nav ul li a .span {
   color: #041649;
   word-wrap: break-word;
 }
-.container .left-side .tag-line .yellow-accent {
+.first-page-section .container .left-side .tag-line .yellow-accent {
   width: 9rem;
   height: 6px;
   margin: 12px 0px;
   background-color: #dab500;
 }
-.container .left-side .tag-line uncle {
+.first-page-section .container .left-side .tag-line uncle {
   color: #dab500;
 }
-.container .left-side .small-text {
+.first-page-section .container .left-side .small-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #041649;
@@ -91,10 +95,15 @@ nav ul li a .span {
   padding: 15px 0px;
   word-wrap: break-word;
 }
-.container .left-side .small-text uncle {
+.first-page-section .container .left-side .small-text uncle {
   color: #dab500;
 }
-.container svg {
+.first-page-section .container .right-side {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.first-page-section .container .right-side svg {
   margin: 0px 10px;
 }
 
