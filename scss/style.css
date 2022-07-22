@@ -7,10 +7,20 @@
   padding: 0;
 }
 
+::-moz-selection {
+  color: white;
+  background: #72ff6d;
+}
+
+::selection {
+  color: white;
+  background: #72ff6d;
+}
+
 header {
+  padding: 0px 70px;
   display: flex;
   justify-content: center;
-  padding: 0px 25px;
 }
 
 nav {
@@ -24,7 +34,7 @@ nav {
 nav .logo {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 nav ul {
   display: flex;
@@ -33,30 +43,59 @@ nav ul li {
   list-style-type: none;
   padding: 0px 71px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 nav ul li a {
-  color: #041649;
+  color: #001140;
+  font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
+nav ul li a .about {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  background-color: #72ff6d;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  width: 94px;
+  margin-top: -10px;
+  height: 34px;
+  border-radius: 834783px;
+  transition: 0.3s ease-in-out;
+}
+nav ul li a .about:hover {
+  background-color: #ffffff;
+  border: 2px solid #72ff6d;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  width: 94px;
+  margin-top: -10px;
+  height: 34px;
+  color: #001140;
+  border-radius: 834783px;
+}
 nav ul li a:hover .span {
-  background: #dab500;
+  background: #72ff6d;
 }
 nav ul li a .span {
   width: 50px;
   height: 4.5px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .first-page-section {
+  padding: 0px 70px;
   display: flex;
-  padding: 0px 25px;
   justify-content: center;
 }
 .first-page-section .container {
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
   max-width: 1600px;
@@ -72,31 +111,31 @@ nav ul li a .span {
   font-size: 44px;
   letter-spacing: 1px;
   line-height: 54px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
-  color: #041649;
+  color: #001140;
   word-wrap: break-word;
 }
 .first-page-section .container .left-side .tag-line .yellow-accent {
   width: 9rem;
   height: 6px;
   margin: 12px 0px;
-  background-color: #dab500;
+  background-color: #72ff6d;
 }
 .first-page-section .container .left-side .tag-line uncle {
-  color: #dab500;
+  color: #72ff6d;
 }
 .first-page-section .container .left-side .small-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #041649;
+  color: #001140;
   font-size: 0.9rem;
   line-height: 20px;
   padding: 15px 0px;
   word-wrap: break-word;
 }
 .first-page-section .container .left-side .small-text uncle {
-  color: #dab500;
+  color: #72ff6d;
 }
 .first-page-section .container .right-side {
   width: 50%;
@@ -104,26 +143,61 @@ nav ul li a .span {
   justify-content: space-between;
 }
 .first-page-section .container .right-side svg {
-  margin: 0px 10px;
+  padding: 0px 69px;
 }
 
-.section-blog {
-  padding: 0% 5.5%;
-  padding-top: 12rem;
-  font-family: "Montserrat", sans-serif;
-  color: #041649;
-  z-index: -1;
-}
-.section-blog .blog-section-headers {
+.blog-section {
+  padding: 0px 70px;
   display: flex;
+  justify-content: center;
+}
+.blog-section .section-blog {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 1600px;
+  padding-top: 5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #001140;
+}
+.blog-section .section-blog .blog-section-headers {
+  display: flex;
+  margin-bottom: 38px;
   flex-direction: column;
 }
-.section-blog .blog-section-headers .blog-section-header {
-  font-size: 2.7rem;
-  font-weight: 400;
+.blog-section .section-blog .blog-section-headers .blog-accent {
+  width: 9rem;
+  height: 6px;
+  margin: -6px 0px;
+  background-color: #72ff6d;
 }
-.section-blog .blog-section-headers .blog-section-sub-header {
+.blog-section .section-blog .blog-section-headers .blog-section-header {
+  font-size: 2.7rem;
+  font-weight: 500;
+  line-height: 69px;
+}
+.blog-section .section-blog .blog-section-headers .blog-section-sub-header {
   line-height: 18px;
   font-size: 0.9rem;
   letter-spacing: 0px;
+}
+.blog-section .section-blog .icon-time {
+  display: flex;
+  justify-content: space-between;
+  margin: 42px 0px;
+}
+.blog-section .section-blog .icon-time .icon-group {
+  width: 250px;
+}
+.blog-section .section-blog .icon-time .icon-group h3 {
+  line-height: 47px;
+}
+.blog-section .section-blog .icon-time .icon-group h6 {
+  line-height: 17px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+svg {
+  stroke: #72ff6d;
 }/*# sourceMappingURL=style.css.map */
