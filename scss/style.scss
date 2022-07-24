@@ -16,7 +16,6 @@ header {
   @include outerPadding;
   display: flex;
   justify-content: center;
-  // padding: 0px 25px;
 }
 nav {
   display: flex;
@@ -87,7 +86,6 @@ nav {
 .first-page-section {
   @include outerPadding;
   display: flex;
-  // padding: 0px 25px;
   justify-content: center;
   .container {
     display: flex;
@@ -110,10 +108,7 @@ nav {
         color: $theme-color;
         word-wrap: break-word;
         .yellow-accent {
-          width: 9rem;
-          height: 6px;
-          margin: 12px 0px;
-          background-color: $accent-color;
+          @include accentBar(9rem, 12px);
         }
         uncle {
           color: $accent-color;
@@ -146,12 +141,12 @@ nav {
   @include outerPadding;
   display: flex;
   justify-content: center;
+  // margin-top: 5rem;
   .section-blog {
     display: flex;
     width: 100%;
     flex-direction: column;
     max-width: 1600px;
-    padding-top: 5rem;
     font-family: "Montserrat", sans-serif;
     color: #001140;
     .blog-section-headers {
@@ -159,35 +154,33 @@ nav {
       margin-bottom: 38px;
       flex-direction: column;
       .blog-accent {
-        width: 9rem;
-        height: 6px;
-        margin: -6px 0px;
-        background-color: $accent-color;
+        @include accentBar(9rem, -6px);
       }
       .blog-section-header {
-        font-size: 2.7rem;
+        font-size: $page-head;
         font-weight: $header-font-weight;
         line-height: 69px;
       }
       .blog-section-sub-header {
         line-height: 18px;
         font-size: 0.9rem;
-        letter-spacing: 0px;
+        letter-spacing: 0.5px;
       }
     }
     .icon-time {
       display: flex;
       justify-content: space-between;
-      margin: 42px 0px;
+      margin:$inside-margin;
       .icon-group {
         width: 250px;
         h3 {
           line-height: 47px;
         }
         h6 {
-          line-height: 17px;
-          font-weight: 500;
+          line-height: 18px;
+          font-weight: 400;
           font-size: 13px;
+          letter-spacing: 0.5px;
         }
       }
     }
@@ -195,4 +188,71 @@ nav {
 }
 svg {
   stroke: $accent-color;
+}
+.testimonial{
+  display: flex;
+  justify-content: center;
+  @include outerPadding;
+  .inside-testimonial{
+    width: 100%;
+    max-width: 1600px;
+   display: flex;
+   flex-direction: column;
+   .testi-header{
+   .testi-accent{
+    @include accentBar(8rem, -4px);
+   }
+   .testi-h1-header{
+    font-family: 'Open sans', sans-serif;
+    font-weight:$header-font-weight;
+    font-size: $page-head;
+    color: $theme-color;
+   }
+  }
+   .testi-readers{
+    display: flex;
+    justify-content: space-between;
+    margin:$inside-margin 0px;
+    
+    // .one{
+    //   height: auto;
+    // }
+    // .two{height: auto;}
+    // .three{height: auto;}
+    // .four{
+    //   height: auto;
+    // }
+    // .five{height: auto;}
+    // .six{height: auto;}
+    // .seven{height: auto;}
+    // .eight{height: auto;}
+    .reader-box{
+      background-color: #aaffa771;
+      width: 20%;
+      border-radius: 50px;
+      height:fit-content;
+      display: flex;
+      padding: 10px 25px;
+      flex-direction: column;
+      .reader-image{
+        width: 50px;
+        border-radius: 50%;
+      }
+      .reader-text{
+        font-size: 19px;
+        font-family: $font-family;
+        letter-spacing: -1px;
+        font-weight: $light-weight;
+        letter-spacing: 0.5px;
+        color: $theme-color;
+      }
+      .reader-name{
+        color: $theme-color;
+        font-size: 20px;
+        padding: 17px 0px;
+        font-family: $font-family;
+      }
+    }
+   }
+  }
 }
