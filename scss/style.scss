@@ -1,4 +1,4 @@
-@import "mixins", "fonts", "variables";
+@import "mixins", "fonts", "variables", 'swiper';
 *,
 *::before,
 *::after {
@@ -8,10 +8,8 @@
 }
 ::selection {
   color: white;
-  background:$accent-color;
+  background: $accent-color;
 }
-
-
 header {
   @include outerPadding;
   display: flex;
@@ -170,16 +168,17 @@ nav {
     .icon-time {
       display: flex;
       justify-content: space-between;
-      margin:$inside-margin;
+      margin: $inside-margin;
       .icon-group {
         width: 250px;
         h3 {
           line-height: 47px;
+          font-size: $medium-font;
         }
         h6 {
           line-height: 18px;
-          font-weight: 400;
-          font-size: 13px;
+          font-weight:$light-weight;
+          font-size:$small-font;
           letter-spacing: 0.5px;
         }
       }
@@ -189,70 +188,66 @@ nav {
 svg {
   stroke: $accent-color;
 }
-.testimonial{
+.testimonial {
   display: flex;
   justify-content: center;
   @include outerPadding;
-  .inside-testimonial{
+  .inside-testimonial {
     width: 100%;
     max-width: 1600px;
-   display: flex;
-   flex-direction: column;
-   .testi-header{
-   .testi-accent{
-    @include accentBar(8rem, -4px);
-   }
-   .testi-h1-header{
-    font-family: 'Open sans', sans-serif;
-    font-weight:$header-font-weight;
-    font-size: $page-head;
-    color: $theme-color;
-   }
-  }
-   .testi-readers{
     display: flex;
-    justify-content: space-between;
-    margin:$inside-margin 0px;
-    
-    // .one{
-    //   height: auto;
-    // }
-    // .two{height: auto;}
-    // .three{height: auto;}
-    // .four{
-    //   height: auto;
-    // }
-    // .five{height: auto;}
-    // .six{height: auto;}
-    // .seven{height: auto;}
-    // .eight{height: auto;}
-    .reader-box{
-      background-color: #aaffa771;
-      width: 20%;
-      border-radius: 50px;
-      height:fit-content;
-      display: flex;
-      padding: 10px 25px;
-      flex-direction: column;
-      .reader-image{
-        width: 50px;
-        border-radius: 50%;
+    flex-direction: column;
+    .testi-header {
+      .testi-accent {
+        @include accentBar(8rem, -4px);
       }
-      .reader-text{
-        font-size: 19px;
-        font-family: $font-family;
-        letter-spacing: -1px;
-        font-weight: $light-weight;
-        letter-spacing: 0.5px;
+      .testi-h1-header {
+        font-family: "Open sans", sans-serif;
+        font-weight: $header-font-weight;
+        font-size: $page-head;
         color: $theme-color;
-      }
-      .reader-name{
-        color: $theme-color;
-        font-size: 20px;
-        padding: 17px 0px;
-        font-family: $font-family;
       }
     }
-   }
+    .testi-readers {
+      display: flex;
+      justify-content: space-between;
+      margin: $inside-margin;
+      .reader-box {
+        background-color: $theme-color-faded;
+        width: 20%;
+        border-radius: 20px;
+        height: fit-content;
+        display: flex;
+        padding: 5px 25px;
+        box-shadow: #001140 0px 0px 69px -39px;
+        flex-direction: column;
+        .reader-image {
+          width: 50px;
+          height: 50px;
+          border-radius:50%;
+          margin: 5px 0px;
+          border:3px solid $accent-color;
+        }
+        .reader-text {
+          font-size: $small-font;
+          font-family: $font-family;
+          letter-spacing: -1px;
+          font-weight: $light-weight;
+          letter-spacing: 0.5px;
+          color: $theme-color;
+        }
+        .reader-name {
+          color: $theme-color;
+          font-size: 15px;
+          padding-top: 25px;
+          padding-bottom: 5px;
+          font-family:$font-family;
+          .name-accent{
+            @include accentBar(3.5rem, 3px);
+            height: 3.8px;
+          }
+        }
+      }
+    }
   }
 }

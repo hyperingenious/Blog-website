@@ -1,4 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Joan&family=Josefin+Sans:ital,wght@0,200;0,300;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;300;500;600;800&family=Open+Sans:wght@300;400;600;800&family=Roboto:wght@100;300;400;500;900&display=swap");
+.head-swiper {
+  display: flex;
+  justify-content: center;
+  padding: 0px 70px;
+}
+.head-swiper .ultimate-swiper {
+  width: 100%;
+  max-width: 1600px;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  background-color: #72ff6d;
+  justify-content: space-between;
+}
+.head-swiper .ultimate-swiper .latest-blogs h1 {
+  font-size: 2.7rem;
+}
+.head-swiper .ultimate-swiper .swiper {
+  width: 240px;
+  height: 320px;
+}
+.head-swiper .ultimate-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(1n) {
+  background: url("https://yt3.ggpht.com/ytc/AKedOLTD7CURST4-pYU1gEd4YFu7uGq4JgwpAyPJ5-gb=s900-c-k-c0x00ffffff-no-rj");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(2n) {
+  background: url("https://lh3.googleusercontent.com/ogw/AOh-ky2AfF_ghzfZlfqmbdRxotUWhLfdaTqH28Q8b9aucA=s32-c-mo");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
 *,
 *::before,
 *::after {
@@ -34,7 +95,7 @@ nav {
 nav .logo {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 nav ul {
   display: flex;
@@ -48,7 +109,7 @@ nav ul li {
 nav ul li a {
   color: #001140;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
@@ -59,7 +120,7 @@ nav ul li a .about {
   background-color: #72ff6d;
   border: none;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   width: 94px;
   margin-top: -10px;
@@ -71,7 +132,7 @@ nav ul li a .about:hover {
   background-color: #ffffff;
   border: 2px solid #72ff6d;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   width: 94px;
   margin-top: -10px;
@@ -190,11 +251,12 @@ nav ul li a .span {
 }
 .blog-section .section-blog .icon-time .icon-group h3 {
   line-height: 47px;
+  font-size: 1.5rem;
 }
 .blog-section .section-blog .icon-time .icon-group h6 {
   line-height: 18px;
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
 
@@ -228,34 +290,46 @@ svg {
 .testimonial .inside-testimonial .testi-readers {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0px 0px;
+  margin: 50px 0px;
 }
 .testimonial .inside-testimonial .testi-readers .reader-box {
-  background-color: rgba(170, 255, 167, 0.4431372549);
+  background-color: rgba(62, 107, 230, 0.795);
   width: 20%;
-  border-radius: 50px;
+  border-radius: 20px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
-  padding: 10px 25px;
+  padding: 5px 25px;
+  box-shadow: #001140 0px 0px 69px -39px;
   flex-direction: column;
 }
 .testimonial .inside-testimonial .testi-readers .reader-box .reader-image {
   width: 50px;
+  height: 50px;
   border-radius: 50%;
+  margin: 5px 0px;
+  border: 3px solid #72ff6d;
 }
 .testimonial .inside-testimonial .testi-readers .reader-box .reader-text {
-  font-size: 19px;
+  font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
   letter-spacing: -1px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.5px;
   color: #001140;
 }
 .testimonial .inside-testimonial .testi-readers .reader-box .reader-name {
   color: #001140;
-  font-size: 20px;
-  padding: 17px 0px;
+  font-size: 15px;
+  padding-top: 25px;
+  padding-bottom: 5px;
   font-family: "Montserrat", sans-serif;
+}
+.testimonial .inside-testimonial .testi-readers .reader-box .reader-name .name-accent {
+  width: 3.5rem;
+  height: 6px;
+  margin: 3px 0px;
+  background-color: #72ff6d;
+  height: 3.8px;
 }/*# sourceMappingURL=style.css.map */
