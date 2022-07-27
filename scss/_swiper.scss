@@ -5,21 +5,26 @@
     .ultimate-swiper{
         width: 100%;
         max-width: 1600px;
-        border-radius: 18px;
-        padding: 20px;
+
+        // padding: 20px;
         display: flex;
-        background-color: $accent-color;
-        // flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         .latest-blogs{
           // display: inline;
+          width: 50%;
+    padding-left: 2%;
           h1{
-            font-size: $page-head;
+            font-size: 7rem;
+            font-family: $font-family;
+            color:$theme-color;
           }
         }
         .swiper {
-            width: 240px;
-            height: 320px;
+            width: 240px*1.5;
+            height: 320px*1.5;
+            max-width: 240px*1.5;
+            max-height: 320px*1.5;
           }
           
           .swiper-slide {
@@ -33,43 +38,43 @@
           }
           
           .swiper-slide:nth-child(1n) {
-            background:url('https://yt3.ggpht.com/ytc/AKedOLTD7CURST4-pYU1gEd4YFu7uGq4JgwpAyPJ5-gb=s900-c-k-c0x00ffffff-no-rj')
+            background: url('https://source.unsplash.com/random/360x480/?cryptocurrency,finance');
           }
           
           .swiper-slide:nth-child(2n) {
-            background: url('https://lh3.googleusercontent.com/ogw/AOh-ky2AfF_ghzfZlfqmbdRxotUWhLfdaTqH28Q8b9aucA=s32-c-mo');
+            background: url('https://source.unsplash.com/random/360x480/?stockmarket,shares');
           }
           
           .swiper-slide:nth-child(3n) {
-            background-color: rgb(10, 184, 111);
+            background: url('https://source.unsplash.com/random/360x480/?love');
           }
           
           .swiper-slide:nth-child(4n) {
-            background-color: rgb(211, 122, 7);
+            background: url('https://source.unsplash.com/random/360x480/?india');
           }
           
           .swiper-slide:nth-child(5n) {
-            background-color: rgb(118, 163, 12);
+            background: url('https://source.unsplash.com/random/360x480/?diwali');
           }
           
           .swiper-slide:nth-child(6n) {
-            background-color: rgb(180, 10, 47);
+            background: url('https://source.unsplash.com/random/360x480/?dance');
           }
           
           .swiper-slide:nth-child(7n) {
-            background-color: rgb(35, 99, 19);
+            background: url('https://source.unsplash.com/random/360x480/?sadhguru');
           }
           
           .swiper-slide:nth-child(8n) {
-            background-color: rgb(0, 68, 255);
+            background: url('https://source.unsplash.com/random/360x480/?war');
           }
           
           .swiper-slide:nth-child(9n) {
-            background-color: rgb(218, 12, 218);
+            background: url('https://source.unsplash.com/random/360x480/?IPL');
           }
           
           .swiper-slide:nth-child(10n) {
-            background-color: rgb(54, 94, 77);
+            background: url('https://source.unsplash.com/random/360x480/?BadBoys');
           }
           
     }

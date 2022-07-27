@@ -170,9 +170,12 @@ nav {
       justify-content: space-between;
       margin: $inside-margin;
       .icon-group {
-        width: 250px;
+        width: 320px;
         h3 {
-          line-height: 47px;
+          line-height: 62px;
+    padding-bottom: 4px;
+    // font-size: 1.5rem;
+          // line-height: 47px;
           font-size: $medium-font;
         }
         h6 {
@@ -213,13 +216,14 @@ svg {
       justify-content: space-between;
       margin: $inside-margin;
       .reader-box {
-        background-color: $theme-color-faded;
-        width: 20%;
+        backdrop-filter: blur(5px);
+        background: linear-gradient(88deg, rgb(163 177 215 / 19%) 0%, rgba(144, 159, 201, 0.3) 35%);
+        width:20%;
         border-radius: 20px;
         height: fit-content;
         display: flex;
         padding: 5px 25px;
-        box-shadow: #001140 0px 0px 69px -39px;
+        // box-shadow: #001140 0px 0px 69px -39px;
         flex-direction: column;
         .reader-image {
           width: 50px;

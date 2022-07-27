@@ -7,18 +7,24 @@
 .head-swiper .ultimate-swiper {
   width: 100%;
   max-width: 1600px;
-  border-radius: 18px;
-  padding: 20px;
   display: flex;
-  background-color: #72ff6d;
+  align-items: center;
   justify-content: space-between;
 }
+.head-swiper .ultimate-swiper .latest-blogs {
+  width: 50%;
+  padding-left: 2%;
+}
 .head-swiper .ultimate-swiper .latest-blogs h1 {
-  font-size: 2.7rem;
+  font-size: 7rem;
+  font-family: "Montserrat", sans-serif;
+  color: #001140;
 }
 .head-swiper .ultimate-swiper .swiper {
-  width: 240px;
-  height: 320px;
+  width: 360px;
+  height: 480px;
+  max-width: 360px;
+  max-height: 480px;
 }
 .head-swiper .ultimate-swiper .swiper-slide {
   display: flex;
@@ -30,34 +36,34 @@
   color: #fff;
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(1n) {
-  background: url("https://yt3.ggpht.com/ytc/AKedOLTD7CURST4-pYU1gEd4YFu7uGq4JgwpAyPJ5-gb=s900-c-k-c0x00ffffff-no-rj");
+  background: url("https://source.unsplash.com/random/360x480/?cryptocurrency,finance");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(2n) {
-  background: url("https://lh3.googleusercontent.com/ogw/AOh-ky2AfF_ghzfZlfqmbdRxotUWhLfdaTqH28Q8b9aucA=s32-c-mo");
+  background: url("https://source.unsplash.com/random/360x480/?stockmarket,shares");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
+  background: url("https://source.unsplash.com/random/360x480/?love");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+  background: url("https://source.unsplash.com/random/360x480/?india");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
+  background: url("https://source.unsplash.com/random/360x480/?diwali");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
+  background: url("https://source.unsplash.com/random/360x480/?dance");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
+  background: url("https://source.unsplash.com/random/360x480/?sadhguru");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
+  background: url("https://source.unsplash.com/random/360x480/?war");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
+  background: url("https://source.unsplash.com/random/360x480/?IPL");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
+  background: url("https://source.unsplash.com/random/360x480/?BadBoys");
 }
 
 *,
@@ -247,10 +253,11 @@ nav ul li a .span {
   margin: 50px 0px;
 }
 .blog-section .section-blog .icon-time .icon-group {
-  width: 250px;
+  width: 320px;
 }
 .blog-section .section-blog .icon-time .icon-group h3 {
-  line-height: 47px;
+  line-height: 62px;
+  padding-bottom: 4px;
   font-size: 1.5rem;
 }
 .blog-section .section-blog .icon-time .icon-group h6 {
@@ -293,7 +300,9 @@ svg {
   margin: 50px 0px;
 }
 .testimonial .inside-testimonial .testi-readers .reader-box {
-  background-color: rgba(62, 107, 230, 0.795);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: linear-gradient(88deg, rgba(163, 177, 215, 0.19) 0%, rgba(144, 159, 201, 0.3) 35%);
   width: 20%;
   border-radius: 20px;
   height: -webkit-fit-content;
@@ -301,7 +310,6 @@ svg {
   height: fit-content;
   display: flex;
   padding: 5px 25px;
-  box-shadow: #001140 0px 0px 69px -39px;
   flex-direction: column;
 }
 .testimonial .inside-testimonial .testi-readers .reader-box .reader-image {
