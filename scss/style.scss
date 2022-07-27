@@ -83,6 +83,7 @@ nav {
 }
 .first-page-section {
   @include outerPadding;
+  margin: 30px 0px;
   display: flex;
   justify-content: center;
   .container {
@@ -137,6 +138,7 @@ nav {
 }
 .blog-section {
   @include outerPadding;
+  margin: 30px 0px;
   display: flex;
   justify-content: center;
   // margin-top: 5rem;
@@ -170,7 +172,7 @@ nav {
       justify-content: space-between;
       margin: $inside-margin;
       .icon-group {
-        width: 320px;
+        width: 24%;
         h3 {
           line-height: 62px;
     padding-bottom: 4px;
@@ -195,6 +197,7 @@ svg {
   display: flex;
   justify-content: center;
   @include outerPadding;
+  margin: 30px 0px;
   .inside-testimonial {
     width: 100%;
     max-width: 1600px;
@@ -219,6 +222,8 @@ svg {
         backdrop-filter: blur(5px);
         background: linear-gradient(88deg, rgb(163 177 215 / 19%) 0%, rgba(144, 159, 201, 0.3) 35%);
         width:20%;
+        max-width: 20%;
+        min-width:20%;
         border-radius: 20px;
         height: fit-content;
         display: flex;
