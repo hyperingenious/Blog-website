@@ -7,9 +7,12 @@
 .head-swiper .ultimate-swiper {
   width: 100%;
   max-width: 1600px;
+  background: linear-gradient(221deg, rgba(163, 177, 215, 0.41) 0%, rgba(144, 159, 201, 0.52) 35%);
   display: flex;
+  padding: 39px 28px;
   align-items: center;
   justify-content: space-between;
+  border-radius: 28px;
 }
 .head-swiper .ultimate-swiper .latest-blogs {
   width: 50%;
@@ -31,15 +34,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(235, 235, 235);
+  box-shadow: rgba(62, 107, 230, 0.7960784314) 0px 0px 101px -29px;
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(1n) {
   background: url("https://source.unsplash.com/random/360x480/?cryptocurrency,finance");
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(2n) {
   background: url("https://source.unsplash.com/random/360x480/?stockmarket,shares");
+  fill-opacity: 1;
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(3n) {
   background: url("https://source.unsplash.com/random/360x480/?love");
@@ -306,9 +311,9 @@ svg {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background: linear-gradient(88deg, rgba(163, 177, 215, 0.19) 0%, rgba(144, 159, 201, 0.3) 35%);
-  width: 20%;
+  width: 18%;
   max-width: 20%;
-  min-width: 20%;
+  min-width: 18%;
   border-radius: 20px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
