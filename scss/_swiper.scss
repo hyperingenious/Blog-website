@@ -1,11 +1,12 @@
 .head-swiper {
   display: flex;
+  margin-top: $section-space;
   justify-content: center;
   @include outerPadding;
   .ultimate-swiper {
     width: 100%;
     max-width: 1600px;
-    background: linear-gradient(221deg, rgb(163 177 215 / 41%) 0%, rgb(144 159 201 / 52%) 35%);
+    background: $gradient;
     display: flex;
     padding: 39px 28px;
     align-items: center;

@@ -1,4 +1,4 @@
-@import "mixins", "fonts", "variables", 'swiper', 'tailwind';
+@import "mixins", "fonts", "variables", 'swiper';
 *,
 *::before,
 *::after {
@@ -10,9 +10,13 @@
   color: white;
   background: $accent-color;
 }
+body{
+  background-color:#232a3d17;
+}
 header {
   @include outerPadding;
   display: flex;
+  margin-top: 1.5rem;
   justify-content: center;
 }
 nav {
@@ -138,7 +142,7 @@ nav {
 }
 .blog-section {
   @include outerPadding;
-  margin: 30px 0px;
+  margin-top: $section-space;
   display: flex;
   justify-content: center;
   // margin-top: 5rem;
@@ -194,10 +198,11 @@ svg {
   stroke: $accent-color;
 }
 .testimonial {
+  margin-top: $section-space;
   display: flex;
   justify-content: center;
   @include outerPadding;
-  margin: 30px 0px;
+  // margin: 30px 0px;
   .inside-testimonial {
     width: 100%;
     max-width: 1600px;
@@ -221,13 +226,14 @@ svg {
       .reader-box {
         backdrop-filter: blur(5px);
         background: linear-gradient(88deg, rgb(163 177 215 / 19%) 0%, rgba(144, 159, 201, 0.3) 35%);
-        width:18%;
+        width:20%;
         max-width: 20%;
-        min-width:18%;
+        min-width:20%;
         border-radius: 20px;
         height: fit-content;
         display: flex;
         padding: 5px 25px;
+        // box-shadow: #001140 0px 0px 69px -39px;
         flex-direction: column;
         .reader-image {
           width: 50px;
@@ -257,5 +263,18 @@ svg {
         }
       }
     }
+  }
+}
+.text-uppercase{
+  color: $theme-color;
+}
+.mb-2{
+  color: $theme-color;
+}
+footer{
+  margin-top: $section-space;
+  .footer-second-parent{
+  background: $gradient;
+  border-radius: 20px;
   }
 }

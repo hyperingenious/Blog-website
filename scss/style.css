@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Joan&family=Josefin+Sans:ital,wght@0,200;0,300;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;300;500;600;800&family=Open+Sans:wght@300;400;600;800&family=Roboto:wght@100;300;400;500;900&display=swap");
 .head-swiper {
   display: flex;
+  margin-top: 200px;
   justify-content: center;
   padding: 0px 70px;
 }
@@ -24,10 +25,10 @@
   color: #001140;
 }
 .head-swiper .ultimate-swiper .swiper {
-  width: 288px;
-  height: 384px;
-  max-width: 360px;
-  max-height: 480px;
+  width: 264px;
+  height: 352px;
+  max-width: 264px;
+  max-height: 352px;
 }
 .head-swiper .ultimate-swiper .swiper-slide {
   display: flex;
@@ -89,9 +90,14 @@
   background: #72ff6d;
 }
 
+body {
+  background-color: rgba(35, 42, 61, 0.0901960784);
+}
+
 header {
   padding: 0px 70px;
   display: flex;
+  margin-top: 1.5rem;
   justify-content: center;
 }
 
@@ -106,7 +112,7 @@ nav {
 nav .logo {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 5 0;
 }
 nav ul {
   display: flex;
@@ -120,7 +126,7 @@ nav ul li {
 nav ul li a {
   color: #001140;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 5 0;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
@@ -131,7 +137,7 @@ nav ul li a .about {
   background-color: #72ff6d;
   border: none;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 5 0;
   font-family: "Montserrat", sans-serif;
   width: 94px;
   margin-top: -10px;
@@ -143,7 +149,7 @@ nav ul li a .about:hover {
   background-color: #ffffff;
   border: 2px solid #72ff6d;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 5 0;
   font-family: "Montserrat", sans-serif;
   width: 94px;
   margin-top: -10px;
@@ -221,7 +227,7 @@ nav ul li a .span {
 
 .blog-section {
   padding: 0px 70px;
-  margin: 30px 0px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
 }
@@ -269,7 +275,7 @@ nav ul li a .span {
 }
 .blog-section .section-blog .icon-time .icon-group h6 {
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 5 0;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
@@ -279,10 +285,10 @@ svg {
 }
 
 .testimonial {
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   padding: 0px 70px;
-  margin: 30px 0px;
 }
 .testimonial .inside-testimonial {
   width: 100%;
@@ -311,9 +317,9 @@ svg {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background: linear-gradient(88deg, rgba(163, 177, 215, 0.19) 0%, rgba(144, 159, 201, 0.3) 35%);
-  width: 18%;
+  width: 20%;
   max-width: 20%;
-  min-width: 18%;
+  min-width: 20%;
   border-radius: 20px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -333,7 +339,7 @@ svg {
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
   letter-spacing: -1px;
-  font-weight: 600;
+  font-weight: 5 0;
   letter-spacing: 0.5px;
   color: #001140;
 }
@@ -350,4 +356,20 @@ svg {
   margin: 3px 0px;
   background-color: #72ff6d;
   height: 3.8px;
+}
+
+.text-uppercase {
+  color: #001140;
+}
+
+.mb-2 {
+  color: #001140;
+}
+
+footer {
+  margin-top: 200px;
+}
+footer .footer-second-parent {
+  background: linear-gradient(221deg, rgba(163, 177, 215, 0.41) 0%, rgba(144, 159, 201, 0.52) 35%);
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
