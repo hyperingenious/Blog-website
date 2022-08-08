@@ -72,35 +72,6 @@
   background: url("https://source.unsplash.com/random/360x480/?BadBoys");
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-::-moz-selection {
-  color: white;
-  background: #72ff6d;
-}
-
-::selection {
-  color: white;
-  background: #72ff6d;
-}
-
-body {
-  background-color: rgba(35, 42, 61, 0.0901960784);
-}
-
-header {
-  padding: 0px 70px;
-  display: flex;
-  margin-top: 1.5rem;
-  justify-content: center;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -225,65 +196,6 @@ nav ul li a .span {
   padding: 0px 69px;
 }
 
-.blog-section {
-  padding: 0px 70px;
-  margin-top: 200px;
-  display: flex;
-  justify-content: center;
-}
-.blog-section .section-blog {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  max-width: 1600px;
-  font-family: "Montserrat", sans-serif;
-  color: #001140;
-}
-.blog-section .section-blog .blog-section-headers {
-  display: flex;
-  margin-bottom: 38px;
-  flex-direction: column;
-}
-.blog-section .section-blog .blog-section-headers .blog-accent {
-  width: 9rem;
-  height: 6px;
-  margin: -6px 0px;
-  background-color: #72ff6d;
-}
-.blog-section .section-blog .blog-section-headers .blog-section-header {
-  font-size: 2.7rem;
-  font-weight: 500;
-  line-height: 69px;
-}
-.blog-section .section-blog .blog-section-headers .blog-section-sub-header {
-  line-height: 18px;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-.blog-section .section-blog .icon-time {
-  display: flex;
-  justify-content: space-between;
-  margin: 70px 0px;
-}
-.blog-section .section-blog .icon-time .icon-group {
-  width: 24%;
-}
-.blog-section .section-blog .icon-time .icon-group h3 {
-  line-height: 62px;
-  padding-bottom: 4px;
-  font-size: 1.5rem;
-}
-.blog-section .section-blog .icon-time .icon-group h6 {
-  line-height: 18px;
-  font-weight: 5 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-
-svg {
-  stroke: #72ff6d;
-}
-
 .testimonial {
   margin-top: 200px;
   display: flex;
@@ -356,6 +268,87 @@ svg {
   margin: 3px 0px;
   background-color: #72ff6d;
   height: 3.8px;
+}
+
+.blog-section {
+  padding: 0px 70px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+.blog-section .section-blog {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 1600px;
+  font-family: "Montserrat", sans-serif;
+  color: #001140;
+}
+.blog-section .section-blog .blog-section-headers {
+  display: flex;
+  margin-bottom: 38px;
+  flex-direction: column;
+}
+.blog-section .section-blog .blog-section-headers .blog-accent {
+  width: 9rem;
+  height: 6px;
+  margin: -6px 0px;
+  background-color: #72ff6d;
+}
+.blog-section .section-blog .blog-section-headers .blog-section-header {
+  font-size: 2.7rem;
+  font-weight: 500;
+  line-height: 69px;
+}
+.blog-section .section-blog .blog-section-headers .blog-section-sub-header {
+  line-height: 18px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.blog-section .section-blog .icon-time {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 0px;
+}
+.blog-section .section-blog .icon-time .icon-group {
+  width: 24%;
+}
+.blog-section .section-blog .icon-time .icon-group h3 {
+  line-height: 62px;
+  padding-bottom: 4px;
+  font-size: 1.5rem;
+}
+.blog-section .section-blog .icon-time .icon-group h6 {
+  line-height: 18px;
+  font-weight: 5 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  color: white;
+  background: #72ff6d;
+}
+
+::selection {
+  color: white;
+  background: #72ff6d;
+}
+
+body {
+  background-color: rgba(35, 42, 61, 0.0901960784);
+}
+
+svg {
+  stroke: #72ff6d;
 }
 
 .text-uppercase {

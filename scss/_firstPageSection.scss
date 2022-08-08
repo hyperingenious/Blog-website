@@ -1,0 +1,55 @@
+.first-page-section {
+    @include outerPadding;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    .container {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1600px;
+      width: 100%;
+      .left-side {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        .tag-line {
+          font-size: 44px;
+          letter-spacing: 1px;
+          line-height: 54px;
+          font-weight: $header-font-weight;
+          font-family: "Montserrat", sans-serif;
+          color: $theme-color;
+          word-wrap: break-word;
+          .yellow-accent {
+            @include accentBar(9rem, 12px);
+          }
+          uncle {
+            color: $accent-color;
+          }
+        }
+        .small-text {
+          font-family: $font-family;
+          font-weight: 500;
+          color: $theme-color;
+          font-size: 0.9rem;
+          line-height: 20px;
+          padding: 15px 0px;
+          word-wrap: break-word;
+          uncle {
+            color: $accent-color;
+          }
+        }
+      }
+      .right-side {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        svg {
+          padding: 0px 69px;
+        }
+      }
+    }
+  }

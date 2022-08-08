@@ -1,0 +1,54 @@
+.blog-section {
+    @include outerPadding;
+    margin-top: $section-space;
+    display: flex;
+    justify-content: center;
+    // margin-top: 5rem;
+    .section-blog {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      max-width: 1600px;
+      font-family: "Montserrat", sans-serif;
+      color: #001140;
+      .blog-section-headers {
+        display: flex;
+        margin-bottom: 38px;
+        flex-direction: column;
+        .blog-accent {
+          @include accentBar(9rem, -6px);
+        }
+        .blog-section-header {
+          font-size: $page-head;
+          font-weight: $header-font-weight;
+          line-height: 69px;
+        }
+        .blog-section-sub-header {
+          line-height: 18px;
+          font-size: 0.9rem;
+          letter-spacing: 0.5px;
+        }
+      }
+      .icon-time {
+        display: flex;
+        justify-content: space-between;
+        margin: $inside-margin;
+        .icon-group {
+          width: 24%;
+          h3 {
+            line-height: 62px;
+      padding-bottom: 4px;
+      // font-size: 1.5rem;
+            // line-height: 47px;
+            font-size: $medium-font;
+          }
+          h6 {
+            line-height: 18px;
+            font-weight:$light-weight;
+            font-size:$small-font;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
