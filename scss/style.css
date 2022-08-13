@@ -218,91 +218,59 @@ nav ul li a .span {
   height: 3.8px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.blog-section {
+  padding: 0px 70px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
 }
-
-::-moz-selection {
-  color: white;
-  background: #72ff6d;
+.blog-section .section-blog {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 1600px;
+  font-family: "Montserrat", sans-serif;
+  color: #001140;
 }
-
-::selection {
-  color: white;
-  background: #72ff6d;
+.blog-section .section-blog .blog-section-headers {
+  display: flex;
+  margin-bottom: 38px;
+  flex-direction: column;
 }
-
-body {
-  background-color: rgba(35, 42, 61, 0.0901960784);
+.blog-section .section-blog .blog-section-headers .blog-accent {
+  width: 9rem;
+  height: 6px;
+  margin: -6px 0px;
+  background-color: #72ff6d;
 }
-
-nav {
+.blog-section .section-blog .blog-section-headers .blog-section-header {
+  font-size: 2.7rem;
+  font-weight: 500;
+  line-height: 69px;
+}
+.blog-section .section-blog .blog-section-headers .blog-section-sub-header {
+  line-height: 18px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.blog-section .section-blog .icon-time {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1600px;
-  height: 11vh;
-  width: 100%;
+  margin: 70px 0px;
 }
-nav .logo {
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+.blog-section .section-blog .icon-time .icon-group {
+  width: 24%;
+}
+.blog-section .section-blog .icon-time .icon-group h3 {
+  line-height: 62px;
+  padding-bottom: 4px;
+  font-size: 1.5rem;
+}
+.blog-section .section-blog .icon-time .icon-group h6 {
+  line-height: 18px;
   font-weight: 5 0;
-}
-nav ul {
-  display: flex;
-}
-nav ul li {
-  list-style-type: none;
-  padding: 0px 71px;
-  font-family: "Montserrat", sans-serif;
-  transition: 0.3s ease-in-out;
-}
-nav ul li a {
-  color: #001140;
-  font-size: 16px;
-  font-weight: 5 0;
-  text-decoration: none;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
-}
-nav ul li a .about {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  background-color: #72ff6d;
-  border: none;
-  font-size: 16px;
-  font-weight: 5 0;
-  font-family: "Montserrat", sans-serif;
-  width: 94px;
-  margin-top: -10px;
-  height: 34px;
-  border-radius: 834783px;
-  transition: 0.3s ease-in-out;
-}
-nav ul li a .about:hover {
-  background-color: #ffffff;
-  border: 2px solid #72ff6d;
-  font-size: 16px;
-  font-weight: 5 0;
-  font-family: "Montserrat", sans-serif;
-  width: 94px;
-  margin-top: -10px;
-  height: 34px;
-  color: #001140;
-  border-radius: 834783px;
-}
-nav ul li a:hover .span {
-  background: #72ff6d;
-}
-nav ul li a .span {
-  width: 50px;
-  height: 4.5px;
-  transition: 0.3s ease-in-out;
 }
 
 .first-page-section {
@@ -364,137 +332,30 @@ nav ul li a .span {
   padding: 0px 69px;
 }
 
-.blog-section {
-  padding: 0px 70px;
-  margin-top: 200px;
-  display: flex;
-  justify-content: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.blog-section .section-blog {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  max-width: 1600px;
-  font-family: "Montserrat", sans-serif;
-  color: #001140;
+
+::-moz-selection {
+  color: white;
+  background: #72ff6d;
 }
-.blog-section .section-blog .blog-section-headers {
-  display: flex;
-  margin-bottom: 38px;
-  flex-direction: column;
+
+::selection {
+  color: white;
+  background: #72ff6d;
 }
-.blog-section .section-blog .blog-section-headers .blog-accent {
-  width: 9rem;
-  height: 6px;
-  margin: -6px 0px;
-  background-color: #72ff6d;
-}
-.blog-section .section-blog .blog-section-headers .blog-section-header {
-  font-size: 2.7rem;
-  font-weight: 500;
-  line-height: 69px;
-}
-.blog-section .section-blog .blog-section-headers .blog-section-sub-header {
-  line-height: 18px;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-.blog-section .section-blog .icon-time {
-  display: flex;
-  justify-content: space-between;
-  margin: 70px 0px;
-}
-.blog-section .section-blog .icon-time .icon-group {
-  width: 24%;
-}
-.blog-section .section-blog .icon-time .icon-group h3 {
-  line-height: 62px;
-  padding-bottom: 4px;
-  font-size: 1.5rem;
-}
-.blog-section .section-blog .icon-time .icon-group h6 {
-  line-height: 18px;
-  font-weight: 5 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
+
+body {
+  background-color: rgba(35, 42, 61, 0.0901960784);
 }
 
 svg {
   stroke: #72ff6d;
-}
-
-.testimonial {
-  margin-top: 200px;
-  display: flex;
-  justify-content: center;
-  padding: 0px 70px;
-}
-.testimonial .inside-testimonial {
-  width: 100%;
-  max-width: 1600px;
-  display: flex;
-  flex-direction: column;
-}
-.testimonial .inside-testimonial .testi-header .testi-accent {
-  width: 8rem;
-  height: 6px;
-  margin: -4px 0px;
-  background-color: #72ff6d;
-}
-.testimonial .inside-testimonial .testi-header .testi-h1-header {
-  font-family: "Open sans", sans-serif;
-  font-weight: 500;
-  font-size: 2.7rem;
-  color: #001140;
-}
-.testimonial .inside-testimonial .testi-readers {
-  display: flex;
-  justify-content: space-between;
-  margin: 70px 0px;
-}
-.testimonial .inside-testimonial .testi-readers .reader-box {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  background: linear-gradient(88deg, rgba(163, 177, 215, 0.19) 0%, rgba(144, 159, 201, 0.3) 35%);
-  width: 20%;
-  max-width: 20%;
-  min-width: 20%;
-  border-radius: 20px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  padding: 5px 25px;
-  flex-direction: column;
-}
-.testimonial .inside-testimonial .testi-readers .reader-box .reader-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 5px 0px;
-  border: 3px solid #72ff6d;
-}
-.testimonial .inside-testimonial .testi-readers .reader-box .reader-text {
-  font-size: 0.9rem;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: -1px;
-  font-weight: 5 0;
-  letter-spacing: 0.5px;
-  color: #001140;
-}
-.testimonial .inside-testimonial .testi-readers .reader-box .reader-name {
-  color: #001140;
-  font-size: 15px;
-  padding-top: 25px;
-  padding-bottom: 5px;
-  font-family: "Montserrat", sans-serif;
-}
-.testimonial .inside-testimonial .testi-readers .reader-box .reader-name .name-accent {
-  width: 3.5rem;
-  height: 6px;
-  margin: 3px 0px;
-  background-color: #72ff6d;
-  height: 3.8px;
 }
 
 .text-uppercase {
